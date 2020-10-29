@@ -8,10 +8,4 @@ edition = "2018"
 
 [dependencies]
 async-trait = "0.1"
-futures = { version = "0.3" }
-libp2prs-traits = { path = "traits", version = "0.1.0", package = "libp2prs-traits" }
-
-[workspace]
-members = [
-    "traits",
-]
+futures = { version = "0.3", features = ["default", "bilock", "unstable"] }
